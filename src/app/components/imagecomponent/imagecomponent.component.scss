@@ -1,0 +1,27 @@
+.myImg{
+    position: relative;
+}
+.imgTitle{
+    position: absolute;
+    margin-left: 130px;
+    bottom: 50px;
+    font-weight: 700;
+    color:#fff;
+    letter-spacing: normal;
+}
+
+@media only screen and (max-width:576px) {
+    
+}
+
+// @media only screen and (max-width:768px) {
+    
+//     .imgTitle{
+//         position: absolute;
+//         margin-left: 130px;
+//         margin-top: -10%;
+//         font-weight: 700;
+//         color: #ffffff;
+//         letter-spacing: normal;
+//     }
+// }

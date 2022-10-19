@@ -1,0 +1,56 @@
+<!-- Navbar -->
+<nav class="navbar">
+    <ul class="nav-links" *ngIf="!check">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Typography</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+    <ul class="mobile-menu" *ngIf="check">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Typography</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+    <img src="../assets/images/icons8-menu-50.png" (click)="toggleMenu()" alt="" class="menu-btn">
+</nav>
+<!-- Header -->
+<header>
+    <div class="header-content">
+        <h2> ENJOY THE BEST DESTINATION WITH OUR TRAVEL AGENCY </h2>
+        <h1> Explore The world</h1>
+        <a class="button" href="#">Get in touch</a>
+    </div>
+</header>
+<section class="tour">
+    <div class="row" *ngFor="let img of imageDetails">
+        <div class="col">
+            <app-imagecomponent [imgUrl]="img.url" [imgTitle]="img.imgName"> </app-imagecomponent>
+        </div>
+    </div>
+</section>
+<!-- <div class="row">
+    <div class="col">
+        <button class="otherTours"> OtherTours</button>
+    </div>
+</div> -->
+<section class="discover">
+    <div class="row">
+        <div class="col2">
+            <img src="../assets/images/index-3-556x382.jpg" alt="">
+        </div>
+        <div class="col2">
+            <h3> Discover New Horizons</h3>
+            <div>
+                ABOUT US
+            </div>
+            <p>
+                Wonder Tour is committed to bringing our clients the best in value and quality travel arrangements. We
+                are passionate about travel and sharing the world's wonders with you.
+            </p>
+            <a class="btn" href="#">Get in touch</a>
+            <a class="btnWhite" href="#"> Read More </a>
+        </div>
+    </div>
+</section>
+
